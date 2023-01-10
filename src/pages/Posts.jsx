@@ -53,7 +53,7 @@ function Posts() {
   }
 
   return (
-    <div className="Posts">
+    <div className="posts">
       <MyButton onClick={() => setModal(true)}>
         Создать пост
       </MyButton>

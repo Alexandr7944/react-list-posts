@@ -15,8 +15,15 @@ const Navbar = () => {
         Выйти
       </MyButton>
       <div className="navbar__links">
-        <Link to="/about">О сайте</Link>
-        <Link to="/posts">Посты</Link>
+        <MyButton>
+          <a href='https://github.com/Alexandr7944/react-list-posts' className="navbar__link">GitHub</a>
+        </MyButton>
+        <MyButton>
+          <Link to="/about" className="navbar__link">О сайте</Link>
+        </MyButton>
+        <MyButton>
+          <Link to="/posts" className="navbar__link">Посты</Link>
+        </MyButton>
       </div>
     </div>
   )

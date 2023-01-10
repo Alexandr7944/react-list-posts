@@ -1,8 +1,23 @@
 .myBtn {
   padding: 5px 15px;
-  color: teal;
+  color: #00bbab;
   font-size: 14px;
-  background: transparent;
-  border: 1px solid teal;
   cursor: pointer;
+  border: none;
+  border-radius: 20px;
+    background: #e3e6ec;
+    box-shadow: 8px 8px 12px rgba(209, 217, 230, 1),
+                -8px -8px 12px rgba(255, 255, 255, 1),
+                inset 0 0 12px rgba(209, 217, 230, 1),
+                inset 0 0  12px rgba(255, 255, 255, 1);
+    transition: .2s ease-in-out;
+}
+
+.myBtn:hover {
+  color: #2edacb;
+  font-weight:500;
+  box-shadow: 0px 0px 15px rgba(209, 217, 230, 1),
+              0px 0px 15px rgba(255, 255, 255, 1),
+              inset 10px 10px 15px rgba(209, 217, 230, 1),
+              inset -10px -10px 15px rgba(255, 255, 255, 1);
 }
