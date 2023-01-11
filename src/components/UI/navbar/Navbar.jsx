@@ -19,10 +19,10 @@ const Navbar = () => {
           <a href='https://github.com/Alexandr7944/react-list-posts' className="btn__link">GitHub</a>
         </MyButton>
         <MyButton>
-          <Link to="/about" className="btn__link">О сайте</Link>
+          <Link to="/react-list-posts/about" className="btn__link">О сайте</Link>
         </MyButton>
         <MyButton>
-          <Link to="/posts" className="btn__link">Посты</Link>
+          <Link to="/react-list-posts/posts" className="btn__link">Посты</Link>
         </MyButton>
       </div>
     </div>

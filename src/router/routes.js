@@ -11,5 +11,5 @@ export const privateRoutes = [
 
 export const publicRoutes = [
   { path: '/react-list-posts/login', element: Login},
-  { path: '/react-list-posts/*', element: Login},
+  { path: '/*', element: Login},
 ];

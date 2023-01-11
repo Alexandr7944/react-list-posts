@@ -19,7 +19,7 @@ const Login = () => {
         <MyInput type="text" placeholder="Введите логин" />
         <MyInput type="password" placeholder="Введите пароль" />
         <MyButton onClick={Login}>
-          <Link to="/posts" className="btn__link">Войти</Link>
+          <Link to="/react-list-posts/posts" className="btn__link">Войти</Link>
         </MyButton>
       </form>
     </div>
