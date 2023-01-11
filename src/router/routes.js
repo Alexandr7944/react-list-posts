@@ -6,6 +6,7 @@ import Posts from "../pages/Posts";
 export const privateRoutes = [
   { path: '/react-list-posts/about', element: About },
   { path: '/react-list-posts/posts', element: Posts },
+  { path: '/react-list-posts/', element: Posts },
   { path: '/react-list-posts/posts/:id', element: PostIdPage },
 ]
 

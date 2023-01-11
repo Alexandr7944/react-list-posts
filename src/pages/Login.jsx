@@ -1,15 +1,18 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import MyButton from '../components/UI/button/MyButton';
 import MyInput from '../components/UI/input/MyInput';
 import { AuthContext } from '../context';
 
 const Login = () => {
   let {setIsAuth} = useContext(AuthContext);
+  const router = useNavigate();
+
   const Login = (e) => {
     e.preventDefault();
     setIsAuth(true);
     localStorage.setItem('auth', true)
+    router('/react-list-posts/posts/')
   }
   return (
     <div className='login'>
@@ -18,9 +21,7 @@ const Login = () => {
       <form onSubmit={Login}>
         <MyInput type="text" placeholder="Введите логин" />
         <MyInput type="password" placeholder="Введите пароль" />
-        <MyButton onClick={Login}>
-          <Link to="/react-list-posts/posts" className="btn__link">Войти</Link>
-        </MyButton>
+        <MyButton>Войти</MyButton>
       </form>
     </div>
   )

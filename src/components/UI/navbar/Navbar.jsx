@@ -1,13 +1,16 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../context';
 import MyButton from '../button/MyButton';
 
 const Navbar = () => {
   const {setIsAuth} = useContext(AuthContext);
+  const router = useNavigate();
+
   const logout = () => {
     setIsAuth(false);
     localStorage.removeItem('auth');
+    router('/react-list-posts')
   }
   return (
     <div className="navbar">
