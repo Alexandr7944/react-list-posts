@@ -14,14 +14,14 @@ const AppRouter = () => {
         {privateRoutes.map((route, index) =>
           <Route key={index} path={route.path} element={<route.element/>}/>
         )}
-        <Route path="/*" element={<Error to="/error" replace />} />
+        <Route path="/react-list-posts/*" element={<Error to="/error" replace />} />
       </Routes>
       :
       <Routes>
         {publicRoutes.map((route, index) =>
           <Route key={index} path={route.path} element={<route.element />}/>
         )}
-        <Route path="/*" element={<Login to="/error" replace />} />
+        <Route path="/react-list-posts/*" element={<Login to="/error" replace />} />
       </Routes>
   )
 }
