@@ -7,7 +7,6 @@ export const privateRoutes = [
   { path: '/about', element: About },
   { path: '/posts', element: Posts },
   { path: '/posts/:id', element: PostIdPage },
-  { path: '/*', element: Posts},
 ]
 
 export const publicRoutes = [

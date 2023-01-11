@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import MyButton from '../components/UI/button/MyButton';
 import MyInput from '../components/UI/input/MyInput';
 import { AuthContext } from '../context';
@@ -17,7 +18,9 @@ const Login = () => {
       <form onSubmit={Login}>
         <MyInput type="text" placeholder="Введите логин" />
         <MyInput type="password" placeholder="Введите пароль" />
-        <MyButton>Войти</MyButton>
+        <MyButton onClick={Login}>
+          <Link to="/posts" className="btn__link">Войти</Link>
+        </MyButton>
       </form>
     </div>
   )

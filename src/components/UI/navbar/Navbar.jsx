@@ -16,13 +16,13 @@ const Navbar = () => {
       </MyButton>
       <div className="navbar__links">
         <MyButton>
-          <a href='https://github.com/Alexandr7944/react-list-posts' className="navbar__link">GitHub</a>
+          <a href='https://github.com/Alexandr7944/react-list-posts' className="btn__link">GitHub</a>
         </MyButton>
         <MyButton>
-          <Link to="/about" className="navbar__link">О сайте</Link>
+          <Link to="/about" className="btn__link">О сайте</Link>
         </MyButton>
         <MyButton>
-          <Link to="/posts" className="navbar__link">Посты</Link>
+          <Link to="/posts" className="btn__link">Посты</Link>
         </MyButton>
       </div>
     </div>
